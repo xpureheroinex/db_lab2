@@ -25,7 +25,8 @@ namespace HostelSQL
             this.roomsTableAdapter.Fill(this.hostelDataSet.Rooms);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "hostelDataSet.Benefits". При необходимости она может быть перемещена или удалена.
             this.benefitsTableAdapter.Fill(this.hostelDataSet.Benefits);
-            dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.AutoGenerateColumns = true;
+
 
         }
 
@@ -45,7 +46,8 @@ namespace HostelSQL
         {
             bindingNavigator1.BindingSource = roomsBindingSource;
             dataGridView1.DataSource = roomsBindingSource;
-            label1.Text = "Rooms";
+            label1.Text = "Rooms";
+
         }
 
         private void studentsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,7 +61,8 @@ namespace HostelSQL
         {
             bindingNavigator1.BindingSource = benefitsBindingSource;
             dataGridView1.DataSource = benefitsBindingSource;
-            label1.Text = "Benefits";
+            label1.Text = "Benefits";
+
         }
 
         private void resettlementToolStripMenuItem_Click(object sender, EventArgs e)
@@ -68,7 +71,8 @@ namespace HostelSQL
             rs.ShowDialog();
             benefitsTableAdapter.Fill(hostelDataSet.Benefits);
             studentsTableAdapter.Fill(hostelDataSet.Students);
-            roomsTableAdapter.Fill(hostelDataSet.Rooms);
+            roomsTableAdapter.Fill(hostelDataSet.Rooms);
+
         }
     }
 }
