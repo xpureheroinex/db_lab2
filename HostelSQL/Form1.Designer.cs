@@ -61,8 +61,10 @@
             this.roomsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benefitsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.resettlementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.queryEditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hostelDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -263,7 +265,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.databaseToolStripMenuItem,
-            this.resettlementToolStripMenuItem});
+            this.resettlementToolStripMenuItem,
+            this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(585, 24);
@@ -298,23 +301,30 @@
             // roomsToolStripMenuItem
             // 
             this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
-            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.roomsToolStripMenuItem.Text = "Rooms";
             this.roomsToolStripMenuItem.Click += new System.EventHandler(this.roomsToolStripMenuItem_Click);
             // 
             // studentsToolStripMenuItem
             // 
             this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.studentsToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.studentsToolStripMenuItem.Text = "Students";
             this.studentsToolStripMenuItem.Click += new System.EventHandler(this.studentsToolStripMenuItem_Click);
             // 
             // benefitsToolStripMenuItem
             // 
             this.benefitsToolStripMenuItem.Name = "benefitsToolStripMenuItem";
-            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.benefitsToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.benefitsToolStripMenuItem.Text = "Benefits";
             this.benefitsToolStripMenuItem.Click += new System.EventHandler(this.benefitsToolStripMenuItem_Click);
+            // 
+            // resettlementToolStripMenuItem
+            // 
+            this.resettlementToolStripMenuItem.Name = "resettlementToolStripMenuItem";
+            this.resettlementToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.resettlementToolStripMenuItem.Text = "Resettlement";
+            this.resettlementToolStripMenuItem.Click += new System.EventHandler(this.resettlementToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -325,12 +335,20 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Benefits";
             // 
-            // resettlementToolStripMenuItem
+            // viewToolStripMenuItem
             // 
-            this.resettlementToolStripMenuItem.Name = "resettlementToolStripMenuItem";
-            this.resettlementToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.resettlementToolStripMenuItem.Text = "Resettlement";
-            this.resettlementToolStripMenuItem.Click += new System.EventHandler(this.resettlementToolStripMenuItem_Click);
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.queryEditToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // queryEditToolStripMenuItem
+            // 
+            this.queryEditToolStripMenuItem.Name = "queryEditToolStripMenuItem";
+            this.queryEditToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.queryEditToolStripMenuItem.Text = "QueryEdit";
+            this.queryEditToolStripMenuItem.Click += new System.EventHandler(this.queryEditToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -397,6 +415,8 @@
         private System.Windows.Forms.ToolStripMenuItem benefitsToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem resettlementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem queryEditToolStripMenuItem;
     }
 }
 

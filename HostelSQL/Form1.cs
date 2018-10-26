@@ -74,5 +74,11 @@ namespace HostelSQL
             roomsTableAdapter.Fill(hostelDataSet.Rooms);
 
         }
+
+        private void queryEditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var qe = new QueryEdit();
+            qe.Show();
+        }
     }
 }
